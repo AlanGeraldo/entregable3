@@ -2,10 +2,10 @@ const LocationInfo = ({ curretLocation }) => {
   return (
     <section className="bg-[url(/public/images/bg-header.png)]  text-center">
       <div className="flex justify-center h-[255px] px-3 pb-4">
-        <img src="/public/images/portal.png" alt="portal image" />
+        <img src="/images/portal.png" alt="portal image" />
         <img
           className="absolute w-[420px] px-4 top-[50px]"
-          src="/public/images/logo.png"
+          src="/images/logo.png"
           alt=""
         />
       </div>

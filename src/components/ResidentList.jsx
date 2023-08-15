@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ResidentCard from "./ResidentCard";
 import Pagination from "./Pagination";
 
-const INITIAL_PAGE = 1
+const INITIAL_PAGE = 1;
 
 export const ResidentList = ({ residents, curretLocation }) => {
   const [currentPage, setCurrentPage] = useState(INITIAL_PAGE);
@@ -21,12 +21,12 @@ export const ResidentList = ({ residents, curretLocation }) => {
   }
 
   useEffect(() => {
-    setCurrentPage(INITIAL_PAGE)
-  }, [curretLocation])
+    setCurrentPage(INITIAL_PAGE);
+  }, [curretLocation]);
 
   return (
     <section className="bg-[url(/public/images/bg-image.png)] bg-cover min-h-screen">
-      <section className="grid justify-center  gap-4 grid-cols-[repeat(1,_250px)] max-w-[1200px] sm:grid-cols-[repeat(2,_250px)]">
+      <section className="grid justify-center  gap-4 grid-cols-[repeat(1,_250px)] max-w-[1300px] sm:grid-cols-[repeat(2,_250px)]">
         {residentInPage.map((resident) => (
           <ResidentCard key={resident} residentUrl={resident} />
         ))}
@@ -35,8 +35,7 @@ export const ResidentList = ({ residents, curretLocation }) => {
         setCurrentPage={setCurrentPage}
         pages={pages}
         currentPage={currentPage}
-        />
-
+      />
     </section>
   );
 };

@@ -6,7 +6,7 @@ const LocationForm = ({ handleSubmit }) => {
         onSubmit={handleSubmit}
       >
         <input
-          className="border-1 text-xs  border-green-600 bg-black/80 text-white text-center w-[170px]  sm:w-[280px]"
+          className="border-1 outline-none text-xs  border-green-600 bg-black/80 text-white text-center w-[170px]  sm:w-[280px]"
           id="newLocation"
           placeholder="Type a location Id..."
           min={1}
